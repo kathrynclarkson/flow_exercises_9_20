@@ -9,20 +9,20 @@
 
 		var player1Score = prompt("Player 1 Score:");
 		var player2Score = prompt("Player 2 Score:");
-		var highestscore =0; 
+		var winner =0; 
 		if (player1Score > player2Score) {
-			highestscore=player1Score; 
+			winner="Player 1"; 
 		} else if (player2Score > player1Score) {
-			highestscore=player2Score;
+			winner= "Player 2";
 		} else {
         	//they are the same! :)
-        	highestscore="tie";
+        	winner="tie";
         }
 
         /*
             Todo: Console log the number of the player with the higher score, or "Tie" if there is a tie.
             */
-            console.log("The highest score is " + highestscore);
+            console.log("The winner is " + winner);
         </script>
     </body>
     </html>
